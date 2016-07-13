@@ -1,0 +1,134 @@
+/*
+
+My Custom CSS
+=============
+
+Author:  Brad Hussey
+Updated: August 2013
+Notes:	 Hand coded for Udemy.com
+
+*/
+
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+.tit{
+   font-size: 15px;
+   font-weight: 20px;
+}
+.row h3{
+   text-align: center;
+}
+.im2{
+   width:100%;
+}
+
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+.navbar-text{
+   font-size: 25px;
+   font-family: 'Lobster', cursive;
+}
+p.navbar-text{
+   padding-bottom: 4px;
+   margin: 10px 15px;
+}
+.navbar-header{
+   margin-bottom: -8px;
+}
+.navbar-brand{
+   padding: 10px 15px;
+}
+ul.unstyled{
+   list-style: none;
+   padding: 0;
+}
+.unstyled{
+   margin-top: 20px;
+   margin-left: 70px;
+}
+.im{
+   padding-left: 25px;
+   padding-top: 25px;
+}
+.im1{
+   padding-left: 40px;
+   padding-bottom: 10px;
+}
+.off h3{
+   font-family: 'Lobster', cursive;
+}
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+   
+   
+   
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+#mycarousel{
+   margin-top: 60px;
+}
+#mycarousel .item{
+   height:350px;
+}
+#slide1{
+   background: url('../../images/a2.jpg') top no-repeat;
+}
+#slide2{
+   background: url('../../images/c2.jpg') top no-repeat;
+}
+#slide3{
+   background: url('../../images/d2.jpg') top no-repeat;
+}
+
+
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+
+
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+	
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+#mycarousel .item{
+   height:260px;
+}
+#slide1{
+   background: url('../../images/a3.jpg')top center no-repeat;
+}
+#slide2{
+   background: url('../../images/c3.jpg')top center no-repeat;
+}
+#slide3{
+   background: url('../../images/d3.jpg')top center no-repeat;
+}
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+#mycarousel .item{
+   height:430px;
+}
+#slide1{
+   background: url('../../images/a1.jpg') top no-repeat;
+}
+#slide2{
+   background: url('../../images/c1.jpg') top no-repeat;
+}
+#slide3{
+   background: url('../../images/d1.jpg') top no-repeat;
+}	
+}
