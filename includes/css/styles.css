@@ -13,19 +13,71 @@ Notes:	 Hand coded for Udemy.com
 /* --------------------------------------
    Layout
    -------------------------------------- */
+.D,.A{
+   color: red;
+}
+}
 .tit{
    font-size: 15px;
    font-weight: 20px;
 }
-.row h3{
+.row h2{
    text-align: center;
 }
 .im2{
    width:100%;
 }
-
+footer{
+   margin-bottom: 20px;
+   margin-left: 25px;
+}
+.full{
+   background: url('../../images/online2.jpg') no-repeat;
+   width:100%;
+   height:600px;
+   margin-top: 50px;
+   background-attachment: fixed;
+   background-size: cover;
+   position:relative;
+   top:0;
+   z-index: -9999;
+}
+.wel{
+   background-color: black;
+   opacity:0.5;
+   width:1100px;
+   height:200px;
+   font-size:38px;
+   color:white;
+   margin-left:100px;
+   padding-top:40px;
+   padding-left:100px;
+   position:absolute;
+   top:270px;
+}
 /* --------------------------------------
    Typography
+   -------------------------------------- */
+
+ul.unstyled{
+   list-style: none;
+   padding: 0;
+}
+.unstyled{
+   margin-top: 20px;
+}
+.im{
+   padding: 25px 0 0 5px;
+}
+.im1{
+   margin-top: 20px;
+   padding: 0 0 10px 0px;
+}
+.off h3{
+   font-family: 'Lobster', cursive;
+}
+/* --------------------------------------
+   Navbar
    -------------------------------------- */
 .navbar-text{
    font-size: 25px;
@@ -41,30 +93,15 @@ p.navbar-text{
 .navbar-brand{
    padding: 10px 15px;
 }
-ul.unstyled{
-   list-style: none;
-   padding: 0;
+.navbar-default .navbar-nav li a{
+   color: black;
 }
-.unstyled{
-   margin-top: 20px;
-   margin-left: 70px;
+.navbar-default .navbar-nav li a:hover{
+   color: blue;
 }
-.im{
-   padding-left: 25px;
-   padding-top: 25px;
-}
-.im1{
-   padding-left: 40px;
-   padding-bottom: 10px;
-}
-.off h3{
-   font-family: 'Lobster', cursive;
-}
-/* --------------------------------------
-   Navbar
-   -------------------------------------- */
-   
-   
+.navbar-default .navbar-nav li a#active{
+   color: blue;
+}  
    
 /* --------------------------------------
    Carousel
@@ -91,20 +128,64 @@ ul.unstyled{
    -------------------------------------- */
 
 
-
 /* --------------------------------------
    Media Queries
    -------------------------------------- */
 
 /* Portrait & landscape phone */
-@media (max-width: 480px) {
-	
+@media (max-width: 480px ) {
+	.full{
+    background: url('../../images/online5.jpg') no-repeat;
+}
+.wel{
+   width:250px;
+   height:75px;
+   font-size:12px;
+   margin-left:20px;
+   padding-top:5px;
+   padding-left: 5px;
+   top:120px;
+}
+#mycarousel .item{
+   height:120px;
+}
+.carous{
+   margin-top: -310px;
+}
+#slide1{
+   background: url('../../images/a4.jpg')top center no-repeat;
+}
+#slide2{
+   background: url('../../images/c4.jpg')top center no-repeat;
+}
+#slide3{
+   background: url('../../images/d4.jpg')top center no-repeat;
+}
 }
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 769px){
 #mycarousel .item{
    height:260px;
+}
+.full{
+    background: url('../../images/online4.jpg') no-repeat;
+    height:600px;
+}
+.wel{
+   width:600px;
+   height:150px;
+   font-size:22px;
+   margin-left:60px;
+   padding-top:20px;
+   top:270px;
+}
+.navbar-form{
+   margin-left: 30px;
+}
+ul.nav.navbar-nav.home {
+   padding-left: 50px;
+   margin-left: 65px;
 }
 #slide1{
    background: url('../../images/a3.jpg')top center no-repeat;
@@ -115,12 +196,16 @@ ul.unstyled{
 #slide3{
    background: url('../../images/d3.jpg')top center no-repeat;
 }
+
 }
 
 /* Large desktop */
 @media (min-width: 1200px) {
 #mycarousel .item{
    height:430px;
+}
+.full{
+    background: url('../../images/online2.jpg') no-repeat;
 }
 #slide1{
    background: url('../../images/a1.jpg') top no-repeat;
