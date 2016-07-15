@@ -51,14 +51,14 @@ ul.unstyled{
    color: blue;
 }
 .im{
-   padding: 25px 0 0 15px;
+   padding: 25px 0 0 5px;
 }
 .im1{
    margin-top: 20px;
-   padding: 0 0 10px 10px;
+   padding: 0 0 10px 0px;
 }
 footer{
-   margin: 0 0 20px 40px;
+   margin: 0 0 20px 25px;
 }
 
 /* --------------------------------------
@@ -109,8 +109,17 @@ p.navbar-text{
 }
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
-	
+@media (min-width: 481px) and (max-width: 768px){
+ul.nav.navbar-nav.home {
+   padding-left: -40px;
+   margin-left: -40px;
+}
+.thumbnail.men,.thumbnail.women{
+   margin-top: 90px;
+}
+.txtd{
+   padding-top: 50px;
+}
 }
 
 /* Large desktop */
